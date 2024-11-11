@@ -27,13 +27,23 @@
 //     System.Console.WriteLine(k);
 // }
 // Console.ReadLine();
-while (true){
+// while (true){
 
-    System.Console.WriteLine("Lösenord");
-    string Lösenord = Console.ReadLine();
-    if (Lösenord == "Hejsan"){
-        System.Console.WriteLine("Hejsan på dig");
-        break;
-    } 
+//     System.Console.WriteLine("Lösenord");
+//     string Lösenord = Console.ReadLine();
+//     if (Lösenord == "Hejsan"){
+//         System.Console.WriteLine("Hejsan på dig");
+//         break;
+//     } 
+// }
+// Console.ReadLine();
+int k = 0;
+string tal;
+int talnr;
+while (k<5){
+    tal = Console.ReadLine();
+    int.TryParse(tal, out talnr);
+    if (talnr>5){
+        System.Console.WriteLine("högre än 5");
+    }
 }
-Console.ReadLine();
