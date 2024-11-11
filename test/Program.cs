@@ -41,9 +41,20 @@ int k = 0;
 string tal;
 int talnr;
 while (k<5){
+    while (true){
+
     tal = Console.ReadLine();
-    int.TryParse(tal, out talnr);
+   bool succes = int.TryParse(tal, out talnr);
+    if (succes == true){
+        break;
+    }
+    else{
+    System.Console.WriteLine("skriv ett tal");
+    }
+    }
+
     if (talnr>5){
         System.Console.WriteLine("högre än 5");
     }
+    k++;
 }
