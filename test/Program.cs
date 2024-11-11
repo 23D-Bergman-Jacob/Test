@@ -37,24 +37,50 @@
 //     } 
 // }
 // Console.ReadLine();
-int k = 0;
-string tal;
-int talnr;
-while (k<5){
-    while (true){
+// int k = 0;
+// string tal;
+// int talnr;
+// while (k<5){
+//     while (true){
 
-    tal = Console.ReadLine();
-   bool succes = int.TryParse(tal, out talnr);
+//     tal = Console.ReadLine();
+//    bool succes = int.TryParse(tal, out talnr);
+//     if (succes == true){
+//         break;
+//     }
+//     else{
+//     System.Console.WriteLine("skriv ett tal");
+//     }
+//     }
+
+//     if (talnr>5){
+//         System.Console.WriteLine("högre än 5");
+//     }
+//     k++;
+// }
+// Console.ReadLine();
+Random rnd = new Random();
+int tal = rnd.Next(1,30);
+string talAnvändare;
+int talnr;
+while (true){
+    while (true){
+    System.Console.WriteLine("Skriv ett nummer");
+    talAnvändare = Console.ReadLine();
+    bool succes = int.TryParse(talAnvändare, out talnr);
     if (succes == true){
         break;
     }
+    }
+    if (talnr == tal){
+        System.Console.WriteLine("rätt");
+        break;
+    }
+    if (talnr < tal){
+        System.Console.WriteLine("för lågt tal");
+    }
     else{
-    System.Console.WriteLine("skriv ett tal");
+        System.Console.WriteLine("för högt tal");
     }
-    }
-
-    if (talnr>5){
-        System.Console.WriteLine("högre än 5");
-    }
-    k++;
 }
+Console.ReadLine();
