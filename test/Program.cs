@@ -104,11 +104,14 @@
 // }
  
 // Console.ReadLine();
-List<string> Städer = new.List;
+List<string> Städer = new List<string>();
 string Input;
 while (true)
 {
+    int antStäder = Städer.Count();
+    antStäder++;
     Input = Console.ReadLine();
+    Console.Clear();
     if (Input.ToLower() == "exit")
     {
         break;
@@ -117,4 +120,9 @@ while (true)
     {
         Städer.Add(Input);
     }
+    for(int k = 0; k<antStäder; k++)
+    {
+        System.Console.WriteLine(Städer[k]);
+    }
+    System.Console.WriteLine(antStäder);
 }
