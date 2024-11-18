@@ -104,25 +104,32 @@
 // }
  
 // Console.ReadLine();
-List<string> Städer = new List<string>();
-string Input;
-while (true)
+// List<string> Städer = new List<string>();
+// string Input;
+// while (true)
+// {
+//     int antStäder = Städer.Count();
+//     antStäder++;
+//     Input = Console.ReadLine();
+//     Console.Clear();
+//     if (Input.ToLower() == "exit")
+//     {
+//         break;
+//     }
+//     else
+//     {
+//         Städer.Add(Input);
+//     }
+//     for(int k = 0; k<antStäder; k++)
+//     {
+//         System.Console.WriteLine(Städer[k]);
+//     }
+//     System.Console.WriteLine(antStäder);
+// }
+
+// upg 3
+for(int k = 0; k<32; k++)
 {
-    int antStäder = Städer.Count();
-    antStäder++;
-    Input = Console.ReadLine();
-    Console.Clear();
-    if (Input.ToLower() == "exit")
-    {
-        break;
-    }
-    else
-    {
-        Städer.Add(Input);
-    }
-    for(int k = 0; k<antStäder; k++)
-    {
-        System.Console.WriteLine(Städer[k]);
-    }
-    System.Console.WriteLine(antStäder);
+    System.Console.WriteLine("hello world");
 }
+Console.ReadLine();
