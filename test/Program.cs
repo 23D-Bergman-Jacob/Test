@@ -59,28 +59,62 @@
 //     k++;
 // }
 // Console.ReadLine();
-Random rnd = new Random();
-int tal = rnd.Next(1,30);
-string talAnvändare;
-int talnr;
-while (true){
-    while (true){
-    System.Console.WriteLine("Skriv ett nummer");
-    talAnvändare = Console.ReadLine();
-    bool succes = int.TryParse(talAnvändare, out talnr);
-    if (succes == true){
+// Random rnd = new Random();
+// int tal = rnd.Next(1,30);
+// string talAnvändare;
+// int talnr;
+// while (true){
+//     while (true){
+//     System.Console.WriteLine("Skriv ett nummer");
+//     talAnvändare = Console.ReadLine();
+//     bool succes = int.TryParse(talAnvändare, out talnr);
+//     if (succes == true){
+//         break;
+//     }
+//     }
+//     if (talnr == tal){
+//         System.Console.WriteLine("rätt");
+//         break;
+//     }
+//     if (talnr < tal){
+//         System.Console.WriteLine("för lågt tal");
+//     }
+//     else{
+//         System.Console.WriteLine("för högt tal");
+//     }
+// }
+// Console.ReadLine();
+
+// Nästa steg
+
+// string[] leksaker = {"Fotboll", "Handboll", "PingisBoll", "Baseboll", "AmerkanskFotboll"};
+// for(int k = 0; k < 5; k++) {
+//     System.Console.WriteLine(leksaker[k]);
+// }
+// Console.ReadLine();
+// string[] leksaker = {"Konstantinos", "Felix", "Sterky", "Jacob", "Filip"};
+// int[] nummer = {1,3,4,2,10};
+// int i = 4;
+// for(int k = 0; k < 5; k++) {
+//     if (k > 0)
+//     {
+//         i= k-1;
+//     }
+// Console.WriteLine($"{leksaker[k]} Tyckte att {leksaker[i]} va en {nummer[k]}");
+// }
+ 
+// Console.ReadLine();
+List<string> Städer = new.List;
+string Input;
+while (true)
+{
+    Input = Console.ReadLine();
+    if (Input.ToLower() == "exit")
+    {
         break;
     }
-    }
-    if (talnr == tal){
-        System.Console.WriteLine("rätt");
-        break;
-    }
-    if (talnr < tal){
-        System.Console.WriteLine("för lågt tal");
-    }
-    else{
-        System.Console.WriteLine("för högt tal");
+    else
+    {
+        Städer.Add(Input);
     }
 }
-Console.ReadLine();
