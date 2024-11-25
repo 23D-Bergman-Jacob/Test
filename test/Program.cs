@@ -128,8 +128,21 @@
 // }
 
 // upg 3
-for(int k = 0; k<32; k++)
+// Hello32();
+
+
+// void Hello32(){
+// for(int k = 0; k<32; k++)
+// {
+//     System.Console.WriteLine("hello world");
+// }
+// Console.ReadLine();
+// }
+Square(9);
+
+static void Square(int n)
 {
-    System.Console.WriteLine("hello world");
+    int square = n*n;
+    System.Console.WriteLine(square);
 }
 Console.ReadLine();
