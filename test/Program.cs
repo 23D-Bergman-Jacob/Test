@@ -153,12 +153,20 @@
 //         double k = a * b;
 //         System.Console.WriteLine(k);
 //     }
-double l = 4;
-double h = 3;
-double area = RightTriangelArea(l, h);
+// double l = 4;
+// double h = 3;
+// double area = RightTriangelArea(l, h);
+// System.Console.WriteLine(area);
+// Console.ReadLine();
+// static double RightTriangelArea(double l, double h)
+// {
+//     return l*h/2;
+// }
+double r = 4;
+double area = RightTriangelArea(r);
 System.Console.WriteLine(area);
 Console.ReadLine();
-static double RightTriangelArea(double l, double h)
+static double RightTriangelArea(double r)
 {
-    return l*h/2;
+    return r*r*Math.PI;
 }
