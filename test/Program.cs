@@ -146,10 +146,19 @@
 //     System.Console.WriteLine(square);
 // }
 // Console.ReadLine();
-Multi(3,5);
+// Multi(3,5);
+// Console.ReadLine();
+//     static void Multi(double a, double b)
+//     {
+//         double k = a * b;
+//         System.Console.WriteLine(k);
+//     }
+double l = 4;
+double h = 3;
+double area = RightTriangelArea(l, h);
+System.Console.WriteLine(area);
 Console.ReadLine();
-    static void Multi(double a, double b)
-    {
-        double k = a * b;
-        System.Console.WriteLine(k);
-    }
+static double RightTriangelArea(double l, double h)
+{
+    return l*h/2;
+}
