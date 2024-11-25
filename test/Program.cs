@@ -138,11 +138,18 @@
 // }
 // Console.ReadLine();
 // }
-Square(9);
+// Square(9);
 
-static void Square(int n)
-{
-    int square = n*n;
-    System.Console.WriteLine(square);
-}
+// static void Square(int n)
+// {
+//     int square = n*n;
+//     System.Console.WriteLine(square);
+// }
+// Console.ReadLine();
+Multi(3,5);
 Console.ReadLine();
+    static void Multi(double a, double b)
+    {
+        double k = a * b;
+        System.Console.WriteLine(k);
+    }
