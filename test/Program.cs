@@ -162,11 +162,27 @@
 // {
 //     return l*h/2;
 // }
-double r = 4;
-double area = RightTriangelArea(r);
-System.Console.WriteLine(area);
+// double r = 4;
+// double area = RightTriangelArea(r);
+// System.Console.WriteLine(area);
+// Console.ReadLine();
+// static double RightTriangelArea(double r)
+// {
+//     return r*r*Math.PI;
+// }
+GetNumberInput();
+
 Console.ReadLine();
-static double RightTriangelArea(double r)
+void GetNumberInput()
 {
-    return r*r*Math.PI;
+    int inputnr;
+    while (true){
+        string input = Console.ReadLine();
+        bool success = int.TryParse(input, out inputnr);
+         if (success)
+         {
+            break;
+         }
+    }
+    System.Console.WriteLine(inputnr);
 }
