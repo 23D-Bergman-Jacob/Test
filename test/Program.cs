@@ -183,6 +183,9 @@ void GetNumberInput()
          {
             break;
          }
+         else{
+            System.Console.WriteLine("skriv ett nummer dummer!");
+         }
     }
     System.Console.WriteLine(inputnr);
 }
