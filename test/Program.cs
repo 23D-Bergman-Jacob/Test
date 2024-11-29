@@ -170,22 +170,51 @@
 // {
 //     return r*r*Math.PI;
 // }
-GetNumberInput();
+// GetNumberInput();
 
+// Console.ReadLine();
+// void GetNumberInput()
+// {
+//     int inputnr;
+//     while (true){
+//         string input = Console.ReadLine();
+//         bool success = int.TryParse(input, out inputnr);
+//          if (success)
+//          {
+//             break;
+//          }
+//          else{
+//             System.Console.WriteLine("skriv ett nummer dummer!");
+//          }
+//     }
+//     System.Console.WriteLine(inputnr);
+// }
+while (true){
+
+string k = "1";
+System.Console.WriteLine("Skriv 1,2,3 beroende på vem du vill");
+List<string> listNamn = ["jacob", "vincent", "kotten"];
+System.Console.WriteLine("1. " + listNamn[0] + ", 2. "+  listNamn[1] + ", 3. "+ listNamn[2]);
+while (true){
+string namn = Console.ReadLine();
+if (namn == "1"){
+    k = "Jacob";
+    break;
+}
+if (namn == "2"){
+    k = "vincent";
+    break;
+}
+if (namn == "3"){
+    k = "Kotten";
+    break;
+}
+}
+    int i = GetChoice(k);
+    System.Console.WriteLine(i);
 Console.ReadLine();
-void GetNumberInput()
+}
+static int GetChoice(string k)
 {
-    int inputnr;
-    while (true){
-        string input = Console.ReadLine();
-        bool success = int.TryParse(input, out inputnr);
-         if (success)
-         {
-            break;
-         }
-         else{
-            System.Console.WriteLine("skriv ett nummer dummer!");
-         }
-    }
-    System.Console.WriteLine(inputnr);
+    return k.Length; 
 }
